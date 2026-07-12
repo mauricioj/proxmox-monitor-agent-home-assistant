@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Proxmox Monitor Agent",
+        "description": "Connect to a Proxmox Monitor Agent HTTP endpoint.",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "path": "Metrics path",
+          "scan_interval": "Scan interval in seconds"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to the Proxmox Monitor Agent endpoint.",
+      "invalid_schema": "The endpoint did not return a supported PMA Schema v1 snapshot.",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This endpoint is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Maintenance",
+        "description": "Run maintenance actions for this integration.",
+        "data": {
+          "remove_unavailable_entities": "Remove unavailable entities"
+        }
+      }
+    }
+  }
+}

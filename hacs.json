@@ -1,0 +1,6 @@
+{
+  "name": "Proxmox Monitor Agent",
+  "render_readme": true,
+  "domains": ["sensor"],
+  "iot_class": "local_polling"
+}

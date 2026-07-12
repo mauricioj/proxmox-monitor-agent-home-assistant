@@ -1,0 +1,124 @@
+{
+  "schema": {"name": "pma.metrics", "version": 1},
+  "collection": {
+    "status": "ok",
+    "generated_at": "2026-07-06T12:00:00Z",
+    "duration_ms": 842,
+    "errors": []
+  },
+  "host": {
+    "id": "node-1",
+    "hostname": "pve01",
+    "manufacturer": "Dell",
+    "model": "PowerEdge",
+    "serial": "ABC123",
+    "proxmox_version": "8.2",
+    "uptime_seconds": 167786
+  },
+  "cpu": {
+    "usage_percent": 12.5,
+    "load_average": {"1m": 0.3, "5m": 0.4, "15m": 0.5}
+  },
+  "memory": {
+    "used_percent": 62.5,
+    "swap_used_percent": 10.0
+  },
+  "network": [
+    {
+      "id": "eno1",
+      "name": "eno1",
+      "state": "up",
+      "rx_bytes": 10737418240,
+      "tx_bytes": 21474836480,
+      "rx_errors": 0,
+      "tx_errors": 1,
+      "speed_mbps": 1000
+    }
+  ],
+  "filesystems": [
+    {
+      "id": "root",
+      "mountpoint": "/",
+      "used_percent": 55.0,
+      "available_bytes": 21490000000,
+      "used_bytes": 15830544384
+    }
+  ],
+  "storage": [
+    {
+      "id": "local-lvm",
+      "name": "local-lvm",
+      "used_percent": 70.0,
+      "available_bytes": 2000000,
+      "used_bytes": 3000000
+    }
+  ],
+  "sensors": {
+    "temperatures": [
+      {
+        "id": "coretemp-isa-0000-package-id-0-temp1-input",
+        "label": "Package id 0",
+        "source": "coretemp-isa-0000",
+        "raw_label": "temp1_input",
+        "value": 57
+      },
+      {
+        "id": "coretemp-isa-0000-core-0-temp2-input",
+        "label": "Core 0",
+        "source": "coretemp-isa-0000",
+        "raw_label": "temp2_input",
+        "value": 56
+      },
+      {
+        "id": "coretemp-isa-0000-core-1-temp3-input",
+        "label": "Core 1",
+        "source": "coretemp-isa-0000",
+        "raw_label": "temp3_input",
+        "value": 54
+      },
+      {
+        "id": "coretemp-isa-0000-core-2-temp4-input",
+        "label": "Core 2",
+        "source": "coretemp-isa-0000",
+        "raw_label": "temp4_input",
+        "value": 59
+      },
+      {
+        "id": "coretemp-isa-0000-core-3-temp5-input",
+        "label": "Core 3",
+        "source": "coretemp-isa-0000",
+        "raw_label": "temp5_input",
+        "value": 55
+      }
+    ],
+    "fans": [],
+    "voltages": [],
+    "power": []
+  },
+  "virtualization": {
+    "vms": [
+      {
+        "vmid": 100,
+        "name": "ha-test-vm",
+        "status": "running",
+        "cpu_usage_percent": 8.2,
+        "memory_used_bytes": 2147483648,
+        "memory_total_bytes": 4294967296,
+        "uptime_seconds": 3600,
+        "tags": ["test"]
+      }
+    ],
+    "containers": [
+      {
+        "ctid": 200,
+        "name": "ha-test-lxc",
+        "status": "stopped",
+        "cpu_usage_percent": 0.0,
+        "memory_used_bytes": 536870912,
+        "memory_total_bytes": 1073741824,
+        "uptime_seconds": 0,
+        "tags": []
+      }
+    ]
+  }
+}

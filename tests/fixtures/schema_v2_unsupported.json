@@ -1,0 +1,5 @@
+{
+  "schema": {"name": "pma.metrics", "version": 2},
+  "collection": {"status": "ok", "errors": []},
+  "host": {"id": "node-1", "hostname": "pve01"}
+}

@@ -1,0 +1,33 @@
+{
+  "schema": {"name": "pma.metrics", "version": 1},
+  "collection": {
+    "status": "ok",
+    "generated_at": "2026-07-06T12:05:00Z",
+    "duration_ms": 510,
+    "errors": []
+  },
+  "host": {
+    "id": "node-1",
+    "hostname": "pve01",
+    "manufacturer": "Dell",
+    "model": "PowerEdge",
+    "serial": "ABC123",
+    "proxmox_version": "8.2",
+    "uptime_seconds": 12346
+  },
+  "cpu": {
+    "usage_percent": 11.0,
+    "load_average": {"1m": 0.2, "5m": 0.3, "15m": 0.4}
+  },
+  "memory": {
+    "used_percent": 60.0,
+    "swap_used_percent": 9.0
+  },
+  "network": [],
+  "filesystems": [],
+  "storage": [],
+  "virtualization": {
+    "vms": [],
+    "containers": []
+  }
+}
